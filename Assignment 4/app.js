@@ -12,6 +12,7 @@ var price = 500;
 var quantity = 3;
 var message = "Hello World";
 var counter = 1;
+
 // 5 illegal variable names
 // var 123name; //Cannot start with a number.
 // var first-name; //- is not allowed in variable names.

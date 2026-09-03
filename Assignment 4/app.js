@@ -2,7 +2,7 @@
 
 
 // 1. Declare 3 variables in one statement.
-var userName = "Alisha" , fullName = "Alisha Khan" , age = "18 years old"
+var userName = "Javeria" , fullName = "Javeria Khan" , age = "17 years old"
 
 
 // 2. Declare 5 legal & 5 illegal variable names

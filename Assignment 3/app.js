@@ -1,6 +1,6 @@
 //  CHAP #03 :VARIABLES FOR NUMBERS 
 
-var age = "18 years old"
+var age = "17 years old"
 alert("Iam " + age)
 
 
@@ -11,7 +11,7 @@ alert("You have visit this website "+visit+ " times ")
 
 
 // 3. Declare a variable called birthYear & assign to it yourbirth year. Show the following message in your browser:
-var birthYear = 2008;
+var birthYear = 2010;
 document.write("My birth year is  " + birthYear)
 
 

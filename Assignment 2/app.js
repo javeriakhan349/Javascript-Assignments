@@ -1,10 +1,10 @@
 //CHAPTER @:
 
 // 1. Declare a variable called username.
-var username = "Javeria"
+var username = "Alisha"
 
 // 2. Declare a variable called myName & assign to it a string that represents your Full Name.
-var myName = "Javeria Khan"
+var myName = "Alisha Khan"
 
 // 3. Write script to
 // a) Declare a JS variable, titled message.
@@ -14,8 +14,8 @@ var message =" Hello World"
 alert(message)
 
 // 4. Write a script to save student’s biodata in JS variables and show the data in alert boxes
-var studentname = "Javeria Khan"
-var studentage = "17 years old"
+var studentname = "ALisha Khan"
+var studentage = "18 years old"
 var studentquali = "Certified WebDeveloper"
 alert(studentname)
 alert(studentage)
@@ -36,7 +36,7 @@ alert(pizza)
 
 
 // 6. Declare a variable called email and assign to it a string thatrepresents your Email Address(e.g. example@example.com).Show the blow mentioned message in an alert box.(Hint: use string concatenation)
-var email = "javeriakhanjk349@gmail.com"
+var email = "alishakhanak0413@gmail.com"
 var emailmessage =  "My email address is "
 alert(emailmessage+ email)
 

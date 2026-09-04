@@ -53,7 +53,7 @@ document.write(" <br> Modulus of ....  " + num1 + " and  " + num2 + "  is  " + r
 
 
 var num;
-<<<<<<< HEAD
+
 document.write("<br> Value after variable declaration is...." + num);
 num = 5;
 
@@ -85,65 +85,20 @@ num = --num;
 document.write("<br> Value after decrement is:   "+num)
 num = num%3;
 document.write("<br> The remainder  is:      "+num)
->>>>>>> a2bc1a28903c31b5a13f05f80378de0ab60d4be2
 
 
 
 // 4. Cost of one movie ticket is 600 PKR. Write a script tostore ticket price in a variable & calculate thecostofbuying 5 tickets to a movie.
 
 var ticketprice = "600";
-<<<<<<< HEAD
-var ticketquantity = "5";
-var totalcost = ticketprice * ticketquantity;
-document.write("<br> Total cost of buying    " + ticketquantity + "  tickets to a movie is    " + totalcost)
-=======
 var ticketquantity ="5";
 var totalcost = ticketprice*ticketquantity;
 document.write("<br> Total cost of buying    " + ticketquantity+ "  tickets to a movie is    " +totalcost)
->>>>>>> a2bc1a28903c31b5a13f05f80378de0ab60d4be2
 
 
 
 // 5. Write a script to display multiplication table of any number in your browser.
-<<<<<<< HEAD
-var tableNo = +prompt("Enter table number...!", "5")
-document.write("<br>Table Of...       " + tableNo)
 
-var series = 1;
-
-var product = tableNo * series;
-
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-document.write("<br>" + tableNo + "  x  " + series + "  =  " + product);
-series = ++series;
-var product = tableNo * series;
-=======
 var tableNo = +prompt("Enter table number...!","5")
 document.write("<br>Table Of...       " +tableNo)
 
@@ -181,7 +136,7 @@ var product = tableNo*series;
 document.write("<br>"+tableNo+"  x  "+series+"  =  "+product);
 series= ++series;
 var product = tableNo*series;
->>>>>>> a2bc1a28903c31b5a13f05f80378de0ab60d4be2
+
 
 
 

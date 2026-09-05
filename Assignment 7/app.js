@@ -130,7 +130,6 @@ else{
 }
 
 
-
 // 10. Write a program that takes temperature as input and shows a message based on following criteria
 // a. T > 40 then “It is too hot outside.”
 // b. T > 30 then “The Weather today is Normal.”
@@ -191,3 +190,4 @@ else if(operation === "%"){
 else{
    document.write("<br> <br> WRONG OPERATION")
 }
+//chap 11 completed

@@ -73,12 +73,12 @@ for( i=0 ; i<=items.length ; i++){
     if(items[i] === userItem)
     {
         flag = "true"
-        document.write(`${userItem} is avaliable at index  ${i}`)
+        document.write(`<br><br>${userItem} is avaliable at index  ${i}`)
     }
 }
 if(flag === "false"){
 
-document.write(`${userItem} is not avaliable `)
+document.write(`<br><br>${userItem} is not avaliable `)
 
 }
 
@@ -112,5 +112,5 @@ var multiples =[]
 for( u=0 ; u<=100 ; u+=5){
     multiples.push(u)
 
-} document.write(`Multiples of 5: `)
+} document.write(`<br><br>Multiples of 5: `)
  document.write("<br>"+multiples)

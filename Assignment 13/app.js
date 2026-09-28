@@ -46,3 +46,29 @@
 // console.log("Old Message"+message);
 // console.log("New Message : "+messageTransform);
 
+
+// // 9. Write a program that converts a string “472” to a number 472. Display the values & types in your browser.
+// var numString = "472";
+// console.log("Value : "+numString);
+// console.log("Type : "+typeof(numString));
+// numString = 472 ; 
+// console.log("Value : "+numString);
+// console.log("Type : "+typeof(numString));
+
+
+
+// // 10. Write a program that takes user input. Convert and show the input in capital letters.
+var userWord = prompt("Enter a word : ")
+// console.log("User Input : "+userWord);
+// console.log("Upper Case : "+userWord.toUpperCase());
+
+// 11. Write a program that takes user input. Convert and show the input in title case.
+function toTitleCase(str) {
+  return str
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+console.log("User Input : "+userWord);
+console.log("Title Case : "+ toTitleCase(userWord));

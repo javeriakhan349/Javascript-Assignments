@@ -58,17 +58,55 @@
 
 
 // // 10. Write a program that takes user input. Convert and show the input in capital letters.
-var userWord = prompt("Enter a word : ")
+// var userWord = prompt("Enter a word : ")
 // console.log("User Input : "+userWord);
 // console.log("Upper Case : "+userWord.toUpperCase());
 
-// 11. Write a program that takes user input. Convert and show the input in title case.
-function toTitleCase(str) {
-  return str
-    .toLowerCase()
-    .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-}
-console.log("User Input : "+userWord);
-console.log("Title Case : "+ toTitleCase(userWord));
+// // 11. Write a program that takes user input. Convert and show the input in title case.
+// function toTitleCase(str) {
+//   return str
+//     .toLowerCase()
+//     .split(' ')
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ');
+// }
+// console.log("User Input : "+userWord);
+// console.log("Title Case : "+ toTitleCase(userWord));
+
+// // 12. Write a program that converts the variable num to string
+// var number = 35.36 ;
+// console.log("Number : " + number);
+// console.log("Result : "+number.toString().replace("." , ""));
+
+// // 14.Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not.
+// arr = [ "cake", "apple pie", "cookie", "chips", "patties"]
+// var userItem = prompt("Enter your desired dessert")
+// var Flag = "false" ;
+// for( i=0 ; i<arr.length ; i++ ){
+//     if ( userItem.toLowerCase() === arr[i] ){
+// var Flag = "True" ;
+//     }
+// }
+// if( Flag === "True"){
+//     console.log(userItem+" is avaliable"+" in our bakery");
+    
+// }
+// else{
+//     console.log(userItem+"  is not avaliable");
+// }
+
+
+// // 16. Write a program to convert the following string to an array using string split method.
+// var university = "University of Karachi";
+// var universityArray = university.split("");
+// for (var i = 0; i < universityArray.length; i++) {
+//     console.log(universityArray[i]);
+
+// }
+
+// // 17. Write a program to display the last character of a user input
+// var userCity = prompt("Enter a city name : ")
+// console.log("User Input : "+ userCity);
+// console.log("Last Character of input : " + userCity.charAt(userCity.length - 1));
+
+

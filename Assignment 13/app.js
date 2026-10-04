@@ -78,6 +78,23 @@ var number = 35.36 ;
 console.log("Number : " + number);
 console.log("Result : "+number.toString().replace("." , ""));
 
+// 13. Write a program to take user input and store username in a variable. If the username contains any special symbol among [@ . , !], prompt the user to enter a valid username. 
+var userNameInput = prompt("Enter your name")
+var userArray = Array.from(userNameInput)
+for( i = 0 ; i < userArray.length ; i++)
+{
+    var code = userNameInput.charCodeAt(i)
+   if ( (code === 33) || (code === 44) ||(code === 46) ||(code === 64) ) {
+    alert("Please enter a valid username")
+   }
+    
+
+    
+
+}
+
+
+
 // 14.Write a program to enable “search by user input” in an array. After searching, prompt the user whether the given item is found in the list or not.
 arr = [ "cake", "apple pie", "cookie", "chips", "patties"]
 var userItem = prompt("Enter your desired dessert")
@@ -94,6 +111,8 @@ if( Flag === "True"){
 else{
     console.log(userItem+"  is not avaliable");
 }
+
+
 
 
 // 16. Write a program to convert the following string to an array using string split method.
@@ -122,3 +141,20 @@ for( i=0 ; i< words.length ; i++){
 console.log(text);
 console.log("There are "+ count+" occurence(s) of the word 'the' ");
 
+// 15. Write a program to take password as an input from user. The password must qualify these requirements:
+// a. It should contain alphabets and numbers
+// b. It should not start with a number
+// c. It must at least 6 characters long
+// If the password does not meet above requirements, prompt the user to enter a valid password. For character codes of a-z, A-Z & 0-9, refer to ASCII table at the end of this document.
+var password = prompt("Enter your password")
+var hasAlphabets = false
+var hasNumbers = false
+var startWithNumber = false
+if( password.length<6 ){
+    alert("Password must contain 6 chracters")
+
+}
+for (let i = 0; i < password.length; i++) {
+    
+    
+}

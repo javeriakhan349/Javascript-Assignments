@@ -49,6 +49,18 @@ if ( date > 15 ) {
 
 
 // 6. Write a program that determines the minutes since midnight, Jan. 1, 1970 and assigns it to a variable that hasn't been declared beforehand. Use any variable you like to represent the Date object.
+var currentDateTime = new Date(); 
+
+totalMilliSecSince1970 = currentDateTime.getTime();
+
+
+totalMinutesSince1970 = Math.floor(totalMilliSecSince1970 / 1000 / 60);
+
+console.log(`Current Date : ${currentDateTime}`);
+console.log(`Minutes since Jan. 1, 1970     : ${totalMinutesSince1970}`);
+console.log(`Milliseconds since Jan. 1, 1970: ${totalMilliSecSince1970}`);
+
+
 
 
 // 7. Write a program that tests whether it's before noon and alert “Its AM” else “its PM”.

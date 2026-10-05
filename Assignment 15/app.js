@@ -64,9 +64,59 @@ console.log(`Milliseconds since Jan. 1, 1970: ${totalMilliSecSince1970}`);
 
 
 // 7. Write a program that tests whether it's before noon and alert “Its AM” else “its PM”.
+var time = new Date ()
+time = time.getHours()
+console.log(time);
+if( time<=12 ){
+    alert("Its AM")
+}
+else{
+    alert("Its PM")
+}
+
 
 // 8. Write a program that creates a Date object for the last day of the last month of 2020 and assigns it to variable named laterDate.
+var laterDate  = new Date(2021,0,0)
+console.log(laterDate);
+
+
 
 // 9. Create a date object of the starting date of this Ramadan and alert the number of days past since 1st Ramadan? Note: 1st Ramadan was on June 18, 2015
+var ramdanDate = new Date(2015,5,18)
+var currentDate = new Date()
+var daysPassed = currentDate - ramdanDate ;
+console.log(daysPassed);
+console.log(`${daysPassed}days have passed since 1st Ramadan, 2015.`);
+
 
 // 10. Write a program that displays in your browser the seconds that elapsed between the reference date and the beginning of 2015.
+var beginingOf2015 = new Date(2015,0,1)
+var referenceDate = new Date(2015,11,5)
+var secondsPassed = (referenceDate - beginingOf2015)/1000 ;
+console.log(` On  ${referenceDate} ${secondsPassed} seconds has passed since begining of 2015`);
+
+// 11. Create a Date object for the current date and time. Extract the hours, reset the date object an hour ahead and finally display the date object in your browser.
+var todayDate = new Date()
+console.log(`Current Date: ${todayDate}`);
+var hours = todayDate.getHours()
+todayDate.setHours(todayDate.getHours() - 1);
+console.log(`1 hour ago it was ${todayDate}`);
+
+
+// 12. Write a program that creates a date object and show the date in an alert box that is reset to 100 years back?
+var todayDate = new Date()
+var hunBack = new Date()
+hunBack.setFullYear(todayDate.getFullYear() - 100); 
+
+console.log("Current Date:"+todayDate.toDateString() + "   Hundread years back it was , " + hunBack.toDateString());
+
+
+// 13. Write a program to ask the user about his age. Calculate and show his birth year in your browser.
+var age = prompt("Enter your age")
+var today = new Date()
+var currentYear = today.getFullYear()
+var birthYear = currentYear-age ; 
+console.log("Your age is  " +  age + "Your birth year is " + birthYear);
+
+
+// 14. Write a program to generate your K-Electric bill in your browser. All the amounts should be rounded off to 2 decimal places.

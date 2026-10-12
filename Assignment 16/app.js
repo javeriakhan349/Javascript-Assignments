@@ -95,19 +95,25 @@
 // counting(start, end);
 
 
-function pythagorousTheorem (bas,perp){
-    square()
-   hyp = Math.sqrt(bas+perp)
-    function square (){
-        bas = bas*bas;
-        perp = perp*perp ; 
-        return bas ; 
-        return perp ;
-    }
-    return hyp ; 
+// function pythagorousTheorem (bas,perp){
+//     square()
+//    hyp = Math.sqrt(bas+perp)
+//     function square (){
+//         bas = bas*bas;
+//         perp = perp*perp ; 
+//         return bas ; 
+//         return perp ;
+//     }
+//     return hyp ; 
+// }
+// var base = +prompt("Enter the base of your triangle")
+// var perpendicular = +prompt("Enter the perpendicular of your triangle")
+// result = pythagorousTheorem(base,perpendicular)
+// output = "The hypotenuse of your triangle with base  "+base+"  and perpendicular  "+perpendicular+"  is "+result ;
+// console.log(output);
+
+
+
+function areaCalculator (len,bread){
+    
 }
-var base = +prompt("Enter the base of your triangle")
-var perpendicular = +prompt("Enter the perpendicular of your triangle")
-result = pythagorousTheorem(base,perpendicular)
-output = "The hypotenuse of your triangle with base  "+base+"  and perpendicular  "+perpendicular+"  is "+result ;
-console.log(output);

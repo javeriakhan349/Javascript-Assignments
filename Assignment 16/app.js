@@ -1,4 +1,4 @@
-//  CHAPTERS :FUNCTION
+// //  CHAPTERS :FUNCTION
 // function todayDate (datefunction){
 //     var today = new Date()
 //     console.log(today);
@@ -16,3 +16,9 @@
     
 // }
 // greetUser()
+// function add ( a , b ){
+// console.log(`sum of ${a} + ${b} is ${a+b}` );
+// }
+// var num1 = +prompt("Enter first number")
+// var num2 = +prompt("Enter second number")
+// add(num1,num2)

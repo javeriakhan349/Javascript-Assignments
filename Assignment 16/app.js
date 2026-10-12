@@ -115,5 +115,13 @@
 
 
 function areaCalculator (len,bread){
-    
+    var area ;
+    var area = len*bread ; 
+    return area ; 
 }
+var length = +prompt("Enter the length of your rectangle")
+var breadth = +prompt("Enter the breadth of your rectangle")
+ var result = areaCalculator(length,breadth)
+
+console.log(`The area of rectangle with length ${length} and breadth ${breadth} is  
+    ${result}`);

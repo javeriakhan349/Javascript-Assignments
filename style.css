@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #100f20, #25153e, #11101e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.calculator {
+    width: 350px;
+    padding: 25px;
+    border-radius: 25px;
+    background: rgba(30, 27, 51, 0.95);
+    border: 1px solid #494064;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.header h2 {
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.header h2 span {
+    color: #ad7aff;
+}
+
+.header p {
+    color: #858198;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.screen {
+    background: #12111f;
+    border: 1px solid #39334e;
+    border-radius: 16px;
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#previous {
+    color: #858198;
+    font-size: 14px;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 36px;
+    font-family: inherit;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 60px;
+    border: none;
+    border-radius: 14px;
+    background: #302d45;
+    color: white;
+    font-size: 20px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #494360;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: scale(0.94);
+}
+
+.special {
+    background: #3c3154;
+    color: #c9aaff;
+}
+
+.operator {
+    background: #513578;
+    color: #e0c9ff;
+}
+
+.equal {
+    background: linear-gradient(135deg, #a66bff, #7538d4);
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    color: #858198;
+    font-size: 12px;
+    margin-top: 22px;
+}
+
+.footer span {
+    color: #b68aff;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+        padding: 18px;
+    }
+
+    button {
+        height: 55px;
+    }
+}

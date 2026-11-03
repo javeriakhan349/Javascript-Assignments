@@ -1,97 +1,56 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JavaScript Assignments</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASIO CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>Hello, world!</h1>
+    <div class="calculator">
+        <div class="header">
+            <h2>CASIO<span>.</span></h2>
+            <p>SMART CALCULATOR</p>
+        </div>
+        <div class="screen">
+            <div id="previous"></div>
+            <input type="text" id="display" value="0" readonly>
+        </div>
+        <div class="buttons">
 
+            <button class="special" onclick="clearCalculator()">AC</button>
+            <button class="special" onclick="deleteNumber()">DEL</button>
+            <button class="special" onclick="percentage()">%</button>
+            <button class="operator" onclick="setOperator('/')">÷</button>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" aria-current="page" href="Assignment 1/index.html">Assignment 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="Assignment 2/index.html">Assignment 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 3/index.html">Assignment 3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 4/index.html">Assignment 4</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 5/index.html">Assignment 5</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 6/index.html">Assignment 5</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 7/index.html">Assignment 7</a>
-        </li>
-    
-        <li class="nav-item">
+            <button onclick="pressNumber('7')">7</button>
+            <button onclick="pressNumber('8')">8</button>
+            <button onclick="pressNumber('9')">9</button>
+            <button class="operator" onclick="setOperator('*')">×</button>
 
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 8/index.html">Assignment 8</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 9/index.html">Assignment 9</a>
-</li>
-<li>
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 10/index.html">Assignment 10</a>
+            <button onclick="pressNumber('4')">4</button>
+            <button onclick="pressNumber('5')">5</button>
+            <button onclick="pressNumber('6')">6</button>
+            <button class="operator" onclick="setOperator('-')">−</button>
 
-        </li>
-    
-            <li class="nav-item">
+            <button onclick="pressNumber('1')">1</button>
+            <button onclick="pressNumber('2')">2</button>
+            <button onclick="pressNumber('3')">3</button>
+            <button class="operator" onclick="setOperator('+')">+</button>
 
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 11/index.html">Assignment 11</a>
-        </li>
-
-            <li class="nav-item">
-
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 12/index.html">Assignment 12</a>
-        </li>
-            <li class="nav-item">
-
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 13/index.html">Assignment 13</a>
-        </li>
-            <li class="nav-item">
-
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 14/index.html">Assignment 14</a>
-        </li>
-            <li class="nav-item">
-
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 15/index.html">Assignment 15</a>
-        </li>
-            <li class="nav-item">
-
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 16/index.html">Assignment 16</a>
-        </li>
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 15/index.html">Assignment 15</a>
-        </li>
-            <li class="nav-item">
-
-          <a class="nav-link link-info link-offset-2 link-underline-opacity-100 link-underline-opacity-100-hover" href="Assignment 17/index.html">Assignment 17</a>
-        </li>
-      </ul>
+            <button class="special" onclick="changeSign()">±</button>
+            <button onclick="pressNumber('0')">0</button>
+            <button onclick="decimal()">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+        </div>
+        <div class="footer">
+            <span>✦</span> Designed with precision
+        </div>
     </div>
-  </div>
-</nav>
-   
- 
-</body>
 
+    <script src="script.js"></script>
+
+</body>
 </html>

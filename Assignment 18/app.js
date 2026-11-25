@@ -45,7 +45,7 @@ setTimeout(()=>
             char2.src = "https://www.fightersgeneration.com/characters/akuma-alpha-stance.gif"
 
         },1000)
-
+    }
 if( event.keyCode == 65 && left2 > 40){
     left2 = left2-10
     char2.style.left = left2 + "px"
@@ -58,13 +58,13 @@ setTimeout(()=>
         },1000)
 
 }
-if ( event.keyCode == 70 || event.keyCode == 16){
+if ( event.keyCode == 70 ){
     char2.src = "https://www.fightersgeneration.com/characters/sf-akuma.gif"
     setTimeout(() => 
     {
         char2.src = "https://www.fightersgeneration.com/characters/akuma-alpha-stance.gif"
     }
-),2000}
+,3000)
 }
-
+}
 window.onkeydown = animateChar

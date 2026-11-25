@@ -1,0 +1,155 @@
+.navcolor{
+    background-color: #9286e723;
+   -
+}
+.box{
+    border: 1px solid black;
+}
+body {
+    background: #101827;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 620px;
+    background: #1e293b;
+    border-radius: 20px;
+}
+
+.auth-left {
+    background: linear-gradient(145deg, #0369a1, #172554);
+    color: white;
+}
+
+.auth-left h1 {
+    font-size: 38px;
+}
+
+.auth-left p {
+    color: #dbeafe;
+    line-height: 1.7;
+}
+
+.brand-icon {
+    width: 85px;
+    height: 85px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.features p {
+    margin-bottom: 18px;
+}
+
+.auth-right {
+    background: #1e293b;
+    color: white;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.input-group-text {
+    background: #334155;
+    color: #38bdf8;
+    border: 1px solid #475569;
+}
+
+.form-control {
+    background: #334155;
+    border: 1px solid #475569;
+    color: white;
+    padding: 12px;
+}
+
+.form-control:focus {
+    background: #334155;
+    color: white;
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 0.2rem rgba(56,189,248,0.15);
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+.password-btn {
+    background: #334155;
+    color: #38bdf8;
+    border: 1px solid #475569;
+}
+
+.password-btn:hover {
+    background: #475569;
+    color: white;
+}
+
+.form-check-input {
+    background-color: #334155;
+    border-color: #64748b;
+}
+
+.form-check-input:checked {
+    background-color: #0284c7;
+    border-color: #0284c7;
+}
+
+.form-check-label {
+    color: #cbd5e1;
+}
+
+.auth-submit {
+    background: #0284c7;
+    border: none;
+    padding: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.auth-submit:hover {
+    background: #0369a1;
+    transform: translateY(-2px);
+}
+
+.auth-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link:hover {
+    color: #7dd3fc;
+    text-decoration: underline;
+}
+
+#message {
+    font-size: 14px;
+}
+
+@media(max-width: 991px) {
+    .auth-left {
+        min-height: 300px;
+    }
+
+    .auth-card {
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 576px) {
+    .auth-left {
+        padding: 30px !important;
+    }
+
+    .auth-left h1 {
+        font-size: 30px;
+    }
+}

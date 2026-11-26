@@ -2,6 +2,22 @@ label:hover{
     cursor: pointer;
 transform: scaleX(1);
 transform: scaleY(1);
-transition: 2s;
+transition: 1s;
 font-weight: 600;
+}
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.textColor{
+    color: #521d83;
+}
+.color{
+    color: grey;
 }

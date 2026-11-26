@@ -1,4 +1,4 @@
-quiz = [
+ var quiz = [
    {
      ques : "Q1. Which method is used to select an HTML element by its ID?" ,
     opt1 : "getElementsByTagName()" ,
@@ -83,9 +83,49 @@ quiz = [
     opt3: "nextSibling",
     opt4: "lastChild",
     ans: "parentElement"
-}
-
-]
+}]
+index = 0 ;
+score = 0 ; 
 function renderQuiz(){
+ var quizContainer = document.getElementById("quizContainer")
+ var option = document.getElementsByName("option")
+ for( i=0 ; i<option.length ; i++){
+    if( option[i].checked){
+        if( option[i].value === quiz[index-1].ans)
+            score++
+    }
+ }
+ if(!quiz[index])
+ {
+    var per = (score/quiz.length)*100 ;
+  
+    quizContainer.innerHTML = ` 
+        <h1 class=" my-4 text-center textColor">Quiz Completed</h1>
+    <h1 class= " smallHeading my-1  fst-italic"> Your score is ${score}/${quiz.length} </h1>
+    <h3  class=" smallHeading my-2 font-roboto">Percentage : ${per}%</h3>
+    <p class=" my-4 lead text-center color font-roboto">Great work and keep improving!</p>
+    `
+     document.getElementById("quizContainer").style.backgroundColor = "#F3EAFB";
+   document.getElementsByClassName("smallHeading").style.color = "#521D83";
+ }
+ quizContainer.innerHTML = `
+             <p class="fw-bold">${quiz[index].ques}</p>
+            <label class="my-2 border-primary-subtle border-bottom "><input type="radio" name="option" value="${quiz[index].opt1}" class="me-3"> ${quiz[index].opt1}</label>
 
+            <label class="my-2 border-primary-subtle border-bottom "><input type="radio" name="option" value="${quiz[index].opt2}" class="me-3"> ${quiz[index].opt2}</label>
+
+            <label class="my-2 border-primary-subtle border-bottom "><input type="radio" name="option" value="${quiz[index].opt3}" class="me-3"> ${quiz[index].opt3}</label>
+
+            <label class="my-2 border-primary-subtle border-bottom "><input type="radio" name="option" value="${quiz[index].opt4}" class="me-3">${quiz[index].opt4}</label>
+
+            <button  id="next-btn" class="btn  btn-success mx-auto w-25 my-2 " onclick = "renderQuiz()">NEXT</button>`
+
+            if(index === quiz.length-1){
+                nextBtn = document.getElementById("next-btn")
+                nextBtn.innerHTML = "Submit"
+                nextBtn.classList.add("btn-danger")
+            }
+ index++         
 }
+renderQuiz()
+
